@@ -1,0 +1,917 @@
+I WANT TO CHANGE THE VISUAL DIRECTION AGAIN.
+
+Use the attached visual reference as the PRIMARY STYLE REFERENCE.
+
+The reference has the exact kind of energy I want:
+bold experimental editorial design, oversized typography, strong orange accents, warm neutral backgrounds, layered imagery, unexpected composition, and a slightly playful contemporary feel.
+
+DO NOT COPY THE WEBSITE.
+DO NOT RECREATE THE REFERENCE.
+Use only its visual language and design principles.
+
+The portfolio should become a highly customized version of this aesthetic for a B.Tech IT / AI student.
+
+==================================================
+CORE VISUAL DIRECTION
+==================================================
+
+Think:
+
+BRUTALIST-EDITORIAL
++
+CONTEMPORARY DIGITAL DESIGN
++
+AI / SOFTWARE
++
+PLAYFUL ENGINEERING
++
+HIGH-END TYPOGRAPHY
+
+The website should immediately feel:
+
+BOLD
+SMART
+UNEXPECTED
+TECHNICAL
+PLAYFUL
+MODERN
+CONFIDENT
+
+It should NOT feel:
+
+- vintage
+- antique
+- museum-like
+- beige Pinterest
+- luxury fashion
+- generic developer portfolio
+- generic AI portfolio
+- SaaS landing page
+- cyberpunk
+- neon hacker
+- excessive glassmorphism
+
+The current “engineering notebook” aesthetic is TOO SAFE.
+
+Move away from it.
+
+==================================================
+1. EXACT DISPLAY FONT
+==================================================
+
+USE:
+
+BRICOLAGE GROTESQUE
+
+This is extremely important.
+
+Use Bricolage Grotesque as the primary display/headline font.
+
+Do NOT substitute it with another serif.
+
+Do NOT use a traditional editorial serif for the main headings.
+
+Bricolage Grotesque should define the personality of the website.
+
+Use it for:
+
+- hero headline
+- section headings
+- project names
+- large numbers
+- major statements
+- selected navigation elements
+
+Use a clean sans-serif for body copy.
+
+Use a monospace font only for technical metadata.
+
+The typography should feel experimental and contemporary.
+
+==================================================
+2. TYPOGRAPHIC STYLE
+==================================================
+
+Use HUGE typography.
+
+Not huge everywhere.
+
+Use scale contrast.
+
+For example:
+
+“I make machines
+see things.”
+
+could occupy a large portion of the viewport.
+
+Then:
+
+“Sometimes they actually understand them.”
+
+can be much smaller.
+
+Allow some typography to overlap nearby visual elements.
+
+Allow intentional cropping at viewport edges.
+
+Allow words to extend beyond normal grid boundaries.
+
+Use unusual line breaks.
+
+Use large numbers such as:
+
+01
+02
+03
+
+as graphic elements.
+
+Typography should become part of the composition rather than simply describing the content.
+
+==================================================
+3. COLOR PALETTE
+==================================================
+
+STOP USING THE PREVIOUS PALE CREAM EVERYWHERE.
+
+Use a stronger contemporary palette.
+
+PRIMARY BACKGROUND:
+
+#F1E8D8
+
+This is warm, but much lighter and cleaner than the previous implementation.
+
+MAIN ACCENT:
+
+#FF4B26
+
+A vivid burnt-orange / vermillion.
+
+Use this boldly.
+
+DARK:
+
+#181512
+
+For strong contrast and dark sections.
+
+SECONDARY DARK:
+
+#2A211C
+
+WARM NEUTRAL:
+
+#D9CDBB
+
+MUTED:
+
+#74685E
+
+OPTIONAL SECONDARY ACCENT:
+
+#C88A2D
+
+The orange should be visually important.
+
+Use it for:
+
+- oversized typography
+- selected labels
+- lines
+- active states
+- buttons
+- technical markings
+- occasional backgrounds
+
+DO NOT use orange as a subtle tiny accent only.
+
+It should be part of the identity.
+
+==================================================
+4. HERO — MAJOR REDESIGN
+==================================================
+
+The hero should be dramatically more experimental.
+
+Use the existing copy:
+
+“I make machines see things.”
+
+“Sometimes they actually understand them.”
+
+But compose it like a graphic poster.
+
+Example visual direction:
+
+A huge orange:
+
+I MAKE
+
+MACHINES
+
+SEE THINGS.
+
+with the typography occupying a large part of the screen.
+
+Then the smaller sentence can sit in an unexpected location.
+
+The hero should have:
+
+- giant typography
+- layered composition
+- subtle image/technical element
+- asymmetrical layout
+- large empty areas
+- orange + dark contrast
+- technical micro-details
+
+DO NOT center everything.
+
+DO NOT make it a standard developer hero with text on left and image on right.
+
+==================================================
+5. HERO VISUAL
+==================================================
+
+Use ONE carefully placed technical visual.
+
+Possible:
+
+A small realistic CCTV camera
+OR
+a small computer-vision lens
+OR
+a tiny neural-network artifact.
+
+But it must interact with the typography.
+
+For example:
+
+The object can partially overlap a giant word.
+
+It can sit between letters.
+
+It can slightly move when the mouse moves.
+
+It should feel intentionally art-directed.
+
+NOT randomly floating.
+
+==================================================
+6. 3D OBJECTS
+==================================================
+
+IMPORTANT:
+
+3D is now SECONDARY.
+
+The previous version had too many random objects.
+
+Remove the majority.
+
+Maximum:
+
+4–5 total 3D artifacts across the ENTIRE website.
+
+They should be:
+
+SMALL
+REALISTIC
+INTENTIONAL
+POSITIONED COMPOSITIONALLY
+
+Use:
+
+01 — miniature CCTV camera
+02 — tiny circuit board
+03 — tiny water/turbine artifact
+04 — tiny neural network structure
+05 — tiny Java/JAR artifact
+
+Do NOT show all of them simultaneously.
+
+Do NOT randomly distribute them around empty space.
+
+Do NOT use them to fill whitespace.
+
+Do NOT make them cartoonish.
+
+Do NOT use giant 3D models.
+
+The website is primarily a typography + image experience.
+
+3D is seasoning.
+
+==================================================
+7. REAL PROJECT IMAGES — VERY IMPORTANT
+==================================================
+
+I WILL ADD MY ACTUAL PROJECT SCREENSHOTS.
+
+Therefore:
+
+REAL PROJECT IMAGES ARE THE MAIN VISUALS.
+
+Do NOT generate fake 3D project scenes.
+
+Do NOT create fake turbines for INNOVEXA.
+
+Do NOT create fake CCTV scenes for SAFE VISION.
+
+Do NOT create fake abstract AI illustrations.
+
+Instead create LARGE replaceable image containers.
+
+Use:
+
+/images/innovexa.png
+/images/safevision.png
+/images/research.png
+
+and make these easy to replace.
+
+Store them in:
+
+src/data/portfolio.ts
+
+Example:
+
+{
+  title: "INNOVEXA",
+  image: "/images/innovexa.png"
+}
+
+==================================================
+8. PROJECT VISUAL STYLE
+==================================================
+
+Project sections should feel like editorial posters/case studies.
+
+NOT cards.
+
+NOT three equal boxes.
+
+NOT standard portfolio grids.
+
+Example:
+
+------------------------------------------
+|                                        |
+|       LARGE REAL SCREENSHOT            |
+|                                        |
+|                                        |
+------------------------------------------
+
+Then huge:
+
+01
+
+INNOVEXA
+
+with text partially overlapping or positioned beside the image.
+
+Use large project numbers.
+
+Use bold typography.
+
+Use orange labels.
+
+Use unusual spacing.
+
+Project screenshots should remain clearly visible.
+
+==================================================
+9. PROJECT 01 — INNOVEXA
+==================================================
+
+Title:
+
+INNOVEXA
+
+Context:
+
+SMART INDIA HACKATHON 2026
+
+Description:
+
+AI-driven intelligent resource optimization and multi-source insight platform for smart water distribution and renewable energy recovery.
+
+Technologies:
+
+AI
+IoT
+Smart Water
+Resource Optimization
+Real-Time Systems
+
+Visual:
+
+LARGE REAL PROJECT SCREENSHOT.
+
+The screenshot should be the main visual.
+
+Do NOT replace it with a 3D turbine.
+
+A tiny water/turbine artifact can appear nearby as a secondary decorative object.
+
+==================================================
+10. PROJECT 02 — SAFE VISION
+==================================================
+
+Title:
+
+SAFE VISION
+
+Description:
+
+AI-based CCTV danger detection and emergency alert system using computer vision.
+
+Technologies:
+
+YOLOv8
+OpenCV
+Python
+Roboflow
+
+Visual:
+
+LARGE REAL SCREENSHOT.
+
+On hover, add an extremely subtle computer-vision interaction:
+
+SCANNING LINE
+
+PERSON 0.94
+OBJECT 0.87
+ALERT 0.91
+
+But the screenshot remains the primary visual.
+
+Do not turn the whole thing into a fake HUD.
+
+==================================================
+11. PROJECT 03 — RESEARCH
+==================================================
+
+Title:
+
+WHISPERS OF THE MIND
+
+Subtitle:
+
+AI Speech Analytics for Early Alzheimer’s Risk
+
+Treat this like a research artifact.
+
+Use:
+
+RESEARCH / 01
+
+AI
+SPEECH ANALYTICS
+RESEARCH
+
+Again, use a replaceable real image if available.
+
+==================================================
+12. SMALLER PROJECTS
+==================================================
+
+Keep:
+
+AI CHATBOT
+IMAGE CAPTIONING
+RECOMMENDATION AI
+JAVA TYPING SPEED TEST
+
+But present them as an interactive list/archive.
+
+Use large typography.
+
+Example:
+
+01
+AI CHATBOT
+
+PYTHON / AI
+
+02
+IMAGE CAPTIONING
+
+CV / AI
+
+03
+RECOMMENDATION AI
+
+ML
+
+04
+JAVA TYPING SPEED TEST
+
+JAVA / DESKTOP / JAR
+
+Hovering a row should reveal:
+
+- small preview
+- metadata
+- orange line
+- INSPECT cursor state
+
+==================================================
+13. ORANGE TYPOGRAPHIC MOMENTS
+==================================================
+
+Use orange as a recurring visual language.
+
+Examples:
+
+PROJECT 01
+SYSTEM ACTIVE
+BUILDING
+AI / CV / SOFTWARE
+
+Large orange numbers:
+
+01
+02
+03
+04
+
+Large orange words can occasionally sit behind or beside dark text.
+
+Use orange blocks occasionally as section dividers.
+
+Do not make everything orange.
+
+The orange should feel intentional and bold.
+
+==================================================
+14. DARK SECTIONS
+==================================================
+
+Break up the warm background with dark sections.
+
+For example:
+
+HERO:
+warm neutral
+
+PROJECTS:
+warm neutral
+
+SKILLS:
+dark
+
+JOURNEY:
+warm neutral
+
+CONTACT:
+dark
+
+Dark sections should use:
+
+#181512
+
+with warm white text and orange accents.
+
+This prevents the website from becoming one giant beige page.
+
+==================================================
+15. SKILLS SECTION
+==================================================
+
+Make this more experimental.
+
+Instead of:
+
+LANGUAGES
+C++
+Java
+Python
+
+Create large typographic groups.
+
+Example:
+
+LANGUAGES
+
+C++   JAVA   PYTHON
+JAVASCRIPT   SQL
+
+Then:
+
+AI / VISION
+
+YOLOv8
+OpenCV
+PyTorch
+TensorFlow
+
+Then:
+
+WEB / BACKEND
+
+React
+Node.js
+Firebase
+REST APIs
+
+Use hover interactions.
+
+Do NOT use pill badges.
+
+==================================================
+16. ABOUT / PERSONALITY
+==================================================
+
+Add a small personality statement.
+
+Something like:
+
+“Curious about how things work —
+especially when hardware, data
+and people meet.”
+
+Keep it human.
+
+Do not make me sound like a corporate AI consultant.
+
+==================================================
+17. JOURNEY
+==================================================
+
+Keep the timeline.
+
+But redesign it as a modern graphic timeline.
+
+2025
+B.TECH INFORMATION TECHNOLOGY
+
+2026
+CODSOFT AI INTERNSHIP
+
+2026
+SMART INDIA HACKATHON
+INNOVEXA
+
+2026
+RESEARCH / AI PROJECTS
+
+Use giant years.
+
+Use orange markers.
+
+Use asymmetrical text.
+
+==================================================
+18. NAVIGATION
+==================================================
+
+Keep:
+
+WORK
+SKILLS
+JOURNEY
+PROFILES
+CONTACT
+
+But make the navigation feel contemporary.
+
+It can be minimal and sticky.
+
+Use:
+
+BS.
+
+as the logo/monogram.
+
+The live status can remain:
+
+● ONLINE
+IST 11:09
+CURRENTLY: BUILDING
+
+==================================================
+19. CUSTOM CURSOR
+==================================================
+
+Keep the technical crosshair cursor.
+
+States:
+
+CROSSHAIR
+TEXT
+INSPECT
+SCAN
+OPEN
+ROTATE
+
+But make it extremely clean.
+
+No giant circles.
+
+No neon.
+
+No glow.
+
+Do not hide the native browser cursor if the custom cursor fails.
+
+Disable custom cursor on touch devices.
+
+==================================================
+20. MOTION
+==================================================
+
+Use motion to reinforce the editorial design.
+
+Examples:
+
+- oversized text slightly shifts during scroll
+- project images subtly tilt
+- orange lines animate
+- numbers slide into place
+- image masks reveal content
+- small 3D artifacts gently move
+- navigation indicator moves
+- typography reveals on scroll
+
+Everything should feel smooth.
+
+Do NOT make everything float.
+
+Do NOT make every section animate aggressively.
+
+==================================================
+21. BACKGROUND
+==================================================
+
+Use mostly clean flat color.
+
+Very subtle digital grid is okay.
+
+But NO:
+
+paper texture
+vintage grain
+old document effects
+heavy noise
+fake parchment
+excessive dots
+
+The reference works because the typography and composition are strong.
+
+Let the background breathe.
+
+==================================================
+22. IMPORTANT COMPOSITION RULE
+==================================================
+
+The website should feel intentionally “designed,” not randomly decorated.
+
+Every element must have a compositional reason.
+
+If there is empty space:
+
+KEEP IT.
+
+Do not automatically fill it with:
+- 3D objects
+- circles
+- lines
+- labels
+- random decorations
+
+The reference uses bold typography and composition to create visual interest.
+
+Follow that principle.
+
+==================================================
+23. RESPONSIVENESS
+==================================================
+
+Desktop:
+
+Full editorial experience.
+
+Mobile:
+
+Recompose the typography rather than simply shrinking everything.
+
+Large headlines can wrap differently.
+
+Hide/reduce 3D artifacts.
+
+Disable custom cursor.
+
+Keep real project screenshots prominent.
+
+==================================================
+24. PERFORMANCE
+==================================================
+
+Use React + TypeScript + Vite.
+
+Framer Motion for animation.
+
+Three.js / React Three Fiber ONLY for the few small artifacts.
+
+Do not run a heavy 3D scene continuously.
+
+Lazy-load images.
+
+==================================================
+25. COMPONENT STRUCTURE
+==================================================
+
+Keep the existing reusable architecture.
+
+Use:
+
+Hero
+Navigation
+TechnicalCursor
+FloatingArtifact
+ProjectCaseStudy
+ProjectIndex
+Skills
+Journey
+Profiles
+Contact
+
+Use:
+
+src/data/portfolio.ts
+
+for all content and image paths.
+
+==================================================
+26. FINAL VISUAL TEST
+==================================================
+
+Before finishing, compare the website's visual feeling against the attached reference.
+
+Ask:
+
+Does the typography feel bold enough?
+
+Does the orange feel strong enough?
+
+Is the layout experimental enough?
+
+Is the page too beige?
+
+Is there too much empty decoration?
+
+Are the project screenshots the visual stars?
+
+Are the 3D objects restrained?
+
+Does it feel modern rather than vintage?
+
+Does it feel like a real creative developer designed it?
+
+Does it feel like MY portfolio rather than a template?
+
+If not, adjust it.
+
+==================================================
+FINAL TARGET
+==================================================
+
+I want someone to open the portfolio and immediately think:
+
+“Okay, this person has taste.”
+
+Then:
+
+“Oh — she's actually building serious AI/software projects too.”
+
+The visual identity should be:
+
+BRICOLAGE GROTESQUE
++
+BOLD ORANGE
++
+WARM NEUTRALS
++
+DARK CONTRAST
++
+HUGE TYPOGRAPHY
++
+REAL PROJECT SCREENSHOTS
++
+SMALL 3D ARTIFACTS
++
+TECHNICAL MICRO-DETAILS
++
+INTERACTION
+
+The website should be memorable, slightly unconventional, and very polished.
+
+DO NOT revert to the previous cream engineering-notebook aesthetic.
+
+DO NOT use a serif editorial font.
+
+USE BRICOLAGE GROTESQUE.
