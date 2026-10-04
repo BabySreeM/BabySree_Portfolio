@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Baby Sree M — Portfolio"
+description = "A personal portfolio for Baby Sree M, a B.Tech Information Technology student at R.M.D. Engineering College, presenting AI, computer vision, software, research, and engineering projects through an interactive editorial notebook experience."
+version = "1.0.0"
+id = "artifacts/baby-sree-portfolio"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 20372
+
+[services.development]
+run = "pnpm --filter @workspace/baby-sree-portfolio run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/baby-sree-portfolio", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/baby-sree-portfolio/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "20372"
+BASE_PATH = "/"

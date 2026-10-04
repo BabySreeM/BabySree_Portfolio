@@ -1,0 +1,1153 @@
+Build my personal portfolio website as a polished, production-quality React + TypeScript + Vite website.
+
+IMPORTANT:
+This is a REAL personal portfolio for placements and internships, not a generic AI-generated developer portfolio.
+
+The design should feel like:
+“A beautiful engineering notebook that happens to be interactive.”
+
+It should combine:
+- editorial design
+- engineering/technical documentation aesthetics
+- subtle 3D
+- warm minimalism
+- playful technical objects
+- sophisticated motion
+- strong typography
+- lots of tiny technical details
+
+DO NOT make it look like:
+- a generic SaaS landing page
+- a cyberpunk website
+- neon hacker aesthetic
+- black + purple AI portfolio
+- glassmorphism
+- excessive gradients
+- a template portfolio
+- a Pinterest/beige fashion website
+- an overdone 3D showcase
+- an AI-generated website
+
+The website should feel custom-designed by a very good creative developer.
+
+==================================================
+1. PERSONAL INFORMATION
+==================================================
+
+Name:
+Baby Sree M
+
+Role:
+B.Tech Information Technology Student
+
+College:
+R.M.D. Engineering College
+
+Education:
+B.Tech Information Technology
+2025–2029
+Currently in second year
+
+Main interests:
+AI/ML
+Computer Vision
+Software Engineering
+Backend Development
+Cloud
+Cybersecurity
+
+The website should make me look like:
+A technically serious student who enjoys building unusual practical systems and has strong visual taste.
+
+Do NOT invent achievements, rankings, metrics, certificates, companies, links, emails, or statistics.
+
+Use placeholders where information is missing.
+
+==================================================
+2. HERO SECTION
+==================================================
+
+Hero headline EXACTLY:
+
+“I make machines see things.”
+
+Second line:
+
+“Sometimes they actually understand them.”
+
+Supporting text:
+
+“B.Tech IT student building software and AI systems to solve practical problems.”
+
+The hero should NOT be centered like a typical portfolio.
+
+Use an asymmetric editorial composition.
+
+Large typography.
+Generous whitespace.
+Technical annotations around the composition.
+
+Include tiny details such as:
+
+FIG. 01
+SYSTEM 01
+BUILD 2026
+CHENNAI / INDIA
+COORD: 13.0827° N / 80.2707° E
+
+Do not make these dominate the design.
+
+Hero should feel like the opening page of an advanced engineering notebook.
+
+==================================================
+3. COLOR SYSTEM
+==================================================
+
+Use this exact palette:
+
+Background:
+#F3EBDD
+
+Primary dark:
+#211A16
+
+Secondary brown:
+#5A4032
+
+Terracotta:
+#B96F4A
+
+Amber:
+#D49A32
+
+Muted text:
+#806F63
+
+Avoid neon colors.
+
+Use color sparingly.
+
+The majority of the website should remain warm cream + espresso.
+
+==================================================
+4. TYPOGRAPHY
+==================================================
+
+Use a sophisticated serif font for major display headlines.
+
+Use a clean modern sans-serif for body text.
+
+Use a monospace font for:
+- technical labels
+- coordinates
+- metadata
+- project IDs
+- system status
+- measurements
+- small annotations
+
+Typography should be one of the strongest visual elements.
+
+Do not use huge text everywhere.
+
+Create hierarchy through:
+- scale
+- spacing
+- weight
+- contrast
+- typography pairing
+
+==================================================
+5. 3D FLOATING ENGINEERING OBJECTS
+==================================================
+
+THIS IS VERY IMPORTANT.
+
+Add approximately 6–8 small 3D-style floating technical objects throughout the website.
+
+They should look like physical engineering objects photographed/rendered in a design studio.
+
+NOT cartoon stickers.
+
+NOT emojis.
+
+NOT random blobs.
+
+NOT giant decorative 3D objects.
+
+They should feel like miniature physical artifacts belonging to an engineering workbench.
+
+Use Three.js / React Three Fiber if practical.
+
+If true 3D models would hurt performance, create lightweight CSS/Canvas/WebGL representations.
+
+Each object should:
+- gently float
+- have subtle rotation
+- respond slightly to mouse movement
+- have subtle depth/parallax
+- cast extremely soft shadows
+- react to hover
+- reveal a tiny technical label
+- never obstruct important text
+- never become visually overwhelming
+
+Keep them physically believable and elegant.
+
+OBJECT 01 — MINI CCTV CAMERA
+
+A small realistic miniature CCTV/security camera.
+
+Dark espresso/charcoal body with subtle metallic details.
+
+Label:
+
+OBJECT 01
+VISION SENSOR
+
+Hover:
+“COMPUTER VISION”
+
+This represents SAFE VISION.
+
+------------------------------------------
+
+OBJECT 02 — CIRCUIT BOARD
+
+A miniature PCB.
+
+Warm green/dark muted board.
+
+Tiny traces.
+Small chips.
+Copper-like details.
+
+Label:
+
+OBJECT 02
+CONTROL BOARD
+
+Hover:
+“EMBEDDED SYSTEM”
+
+Represent hardware / IoT / engineering.
+
+------------------------------------------
+
+OBJECT 03 — TERMINAL / COMMAND WINDOW
+
+A tiny physical-looking floating terminal object.
+
+Could look like a small transparent/physical terminal screen.
+
+Show tiny text:
+
+> npm run build
+> system ready
+
+Label:
+
+OBJECT 03
+TERMINAL
+
+Hover:
+“SOFTWARE”
+
+------------------------------------------
+
+OBJECT 04 — USB DRIVE
+
+A small metallic USB flash drive.
+
+Subtle reflection.
+
+Label:
+
+OBJECT 04
+DATA DEVICE
+
+Hover:
+“DATA / STORAGE”
+
+------------------------------------------
+
+OBJECT 05 — WATER DROPLET + TURBINE
+
+A miniature translucent water droplet interacting with a tiny turbine/water-wheel mechanism.
+
+This represents INNOVEXA.
+
+Label:
+
+OBJECT 05
+RESOURCE LOOP
+
+Hover:
+“WATER + ENERGY”
+
+This should be one of the most visually interesting objects.
+
+Keep it tasteful and scientific.
+
+------------------------------------------
+
+OBJECT 06 — JAVA / JAR OBJECT
+
+A tiny physical archive/package object inspired by a .jar file.
+
+It can look like a small transparent software package/container.
+
+Label:
+
+OBJECT 06
+JAVA PACKAGE
+
+Hover:
+“JAVA”
+
+------------------------------------------
+
+OBJECT 07 — NEURAL NETWORK NODE
+
+A small floating structure made of connected nodes and lines.
+
+Very subtle.
+
+Not glowing neon.
+
+Use thin physical-looking lines.
+
+Label:
+
+OBJECT 07
+MODEL GRAPH
+
+Hover:
+“MACHINE LEARNING”
+
+------------------------------------------
+
+OBJECT 08 — CODE BRACKET / HARDWARE TAG
+
+A small metallic physical tag shaped subtly around:
+
+</>
+
+It should look like an engineered metal object, not a flat icon.
+
+Label:
+
+OBJECT 08
+INTERFACE
+
+Hover:
+“BUILD”
+
+IMPORTANT:
+Do NOT put all objects in the hero.
+
+Distribute them naturally across the page.
+
+Some can appear near:
+- Hero
+- Projects
+- Skills
+- Timeline
+- Contact
+
+The floating objects should feel like recurring artifacts throughout the site.
+
+==================================================
+6. FLOATING OBJECT PHYSICS
+==================================================
+
+The 3D objects should have subtle motion.
+
+Use different motion patterns:
+
+Object A:
+slow vertical float
+
+Object B:
+slight rotation
+
+Object C:
+slow orbit/parallax
+
+Object D:
+small mouse-following movement
+
+Object E:
+very subtle oscillation
+
+Motion should be slow and premium.
+
+Example:
+5–12 second animation cycles.
+
+DO NOT make them bounce aggressively.
+
+DO NOT make them spin continuously like loading icons.
+
+On mouse movement:
+objects should shift approximately 5–20px depending on depth.
+
+Use spring-like motion.
+
+On hover:
+- object slightly enlarges
+- rotation responds to cursor
+- label appears
+- subtle shadow changes
+- nearby technical annotation can activate
+
+==================================================
+7. CUSTOM TECHNICAL CURSOR
+==================================================
+
+Create a custom cursor system.
+
+IMPORTANT:
+Never hide the native cursor unless the custom cursor is confirmed working.
+
+The fallback cursor must remain visible.
+
+Desktop only.
+
+Disable custom cursor on mobile/touch.
+
+Default cursor:
+small technical crosshair/scanner.
+
+It should look like an engineering measurement tool.
+
+Not a glowing dot.
+
+Not a giant circle.
+
+Contextual states:
+
+Normal:
+CROSSHAIR
+
+Hovering text:
+TEXT
+
+Hovering project:
+INSPECT
+
+Hovering image:
+SCAN
+
+Hovering link:
+OPEN
+
+Hovering 3D object:
+ROTATE
+
+The cursor should transition smoothly between states.
+
+Optional:
+very subtle drafting-dot trail.
+
+NO neon glow.
+
+==================================================
+8. LIVE SYSTEM STATUS
+==================================================
+
+Create a small persistent technical status area.
+
+Example:
+
+● ONLINE
+IST 10:42
+CURRENTLY: BUILDING
+
+The clock must use real-time Indian Standard Time.
+
+The status can rotate between:
+
+BUILDING
+LEARNING
+DEBUGGING
+EXPERIMENTING
+
+These are personality details, not fake backend system claims.
+
+Make it feel like a tiny engineering dashboard.
+
+==================================================
+9. SCROLL / NAVIGATION DETAILS
+==================================================
+
+Add:
+
+- smooth scrolling
+- subtle scroll progress indicator
+- section counter
+- active navigation state
+- subtle section transitions
+- micro-interactions
+
+Example:
+
+01 / 06
+
+As the user scrolls:
+
+01 / 06
+02 / 06
+03 / 06
+
+etc.
+
+Do not make the navigation bulky.
+
+==================================================
+10. MICRO TECHNICAL DETAILS
+==================================================
+
+Use these throughout the website in subtle ways:
+
+FIG. 01
+FIG. 02
+OBJECT 01
+OBJECT 02
+SYSTEM 01
+SYSTEM 02
+BUILD 04
+MODEL 02
+INPUT
+OUTPUT
+STATUS
+ACTIVE
+SCAN
+INSPECT
+DATA
+SIGNAL
+PROCESS
+VERSION 01
+COORD:
+X:
+Y:
+Z:
+
+Also use:
+
+- tiny arrows
+- measurement lines
+- dotted guide lines
+- crosshair marks
+- tiny circles
+- thin borders
+- technical rulers
+- coordinate labels
+- small mono annotations
+
+These should make the website feel engineered.
+
+Do NOT cover every section with decorations.
+
+Whitespace is essential.
+
+==================================================
+11. PROJECT SECTION
+==================================================
+
+Do NOT use a boring 3-card grid.
+
+Projects should be large editorial case studies.
+
+Use alternating layouts:
+
+Project image on left / text on right
+
+then
+
+text on left / image on right
+
+then repeat.
+
+Each project should feel like a mini case study.
+
+Include:
+
+project number
+project name
+short description
+technology
+role
+status
+technical labels
+
+Example:
+
+PROJECT 01
+INNOVEXA
+
+STATUS / SIH 2026
+
+AI-driven intelligent resource optimization for smart water distribution and renewable energy recovery.
+
+Tags:
+AI
+IoT
+RESOURCE OPTIMIZATION
+REAL-TIME SYSTEMS
+
+Use replaceable image placeholders.
+
+I WILL REPLACE THE PROJECT IMAGES LATER.
+
+Make image paths easy to change.
+
+==================================================
+12. INNOVEXA
+==================================================
+
+Project name:
+
+INNOVEXA
+
+Description:
+
+AI-driven intelligent resource optimization and multi-source insight platform for smart water distribution and renewable energy recovery.
+
+Context:
+
+Smart India Hackathon 2026
+
+Focus:
+
+AI
+IoT
+Smart Water
+Resource Optimization
+Renewable Energy
+Real-Time Monitoring
+
+The visual should communicate:
+water + infrastructure + intelligence.
+
+Use OBJECT 05 nearby.
+
+==================================================
+13. SAFE VISION
+==================================================
+
+Project:
+
+SAFE VISION
+
+Description:
+
+AI-based CCTV danger detection and emergency alert system using computer vision.
+
+Technology:
+
+YOLOv8
+OpenCV
+Python
+Roboflow
+
+Focus:
+
+Real-time computer vision
+Object detection
+Safety monitoring
+Emergency alerts
+
+Create an interactive project image.
+
+When hovering over the SAFE VISION image:
+
+Show a subtle computer-vision scanning effect.
+
+Examples of overlay labels:
+
+PERSON 0.94
+OBJECT 0.87
+ALERT 0.91
+
+MODEL ACTIVE
+SCAN
+OBJECT DETECTED
+
+IMPORTANT:
+This must look tasteful and believable.
+
+NOT like a military HUD.
+
+Use very thin bounding boxes and subtle scanning lines.
+
+==================================================
+14. CODSOFT AI INTERNSHIP
+==================================================
+
+Create a project/experience section for:
+
+CODSOFT AI INTERNSHIP
+
+Projects:
+
+AI Chatbot
+Image Captioning
+Recommendation AI
+
+Present these as practical AI work rather than giant cards.
+
+Include:
+
+INTERNSHIP
+AI DEVELOPMENT
+2026
+
+==================================================
+15. JAVA PROJECT
+==================================================
+
+Project:
+
+JAVA TYPING SPEED TEST
+
+A Java desktop application packaged as a JAR.
+
+Show:
+
+JAVA
+DESKTOP APP
+JAR
+
+Use OBJECT 06 somewhere nearby.
+
+==================================================
+16. RESEARCH PAPER
+==================================================
+
+Research:
+
+“Whispers of the Mind — AI Speech Analytics for Early Alzheimer’s Risk”
+
+Present it as a research artifact.
+
+Use:
+
+RESEARCH / 01
+
+AI
+SPEECH ANALYTICS
+HEALTHCARE RESEARCH
+
+Do not invent publication status or claims.
+
+==================================================
+17. PROJECT IMAGE INTERACTIONS
+==================================================
+
+All major project images should feel alive.
+
+On mouse movement:
+
+- subtle perspective tilt
+- slight depth shift
+- slight scale
+- technical annotation movement
+
+On hover:
+
+- image border becomes slightly more active
+- tiny label appears
+- project ID becomes visible
+- subtle cursor interaction
+
+Do NOT use:
+- aggressive 3D distortion
+- giant rotations
+- excessive glow
+- fake holograms
+
+Each project can have slightly different interaction.
+
+==================================================
+18. SMALL PROJECT INDEX
+==================================================
+
+For smaller projects, use a technical index/list rather than cards.
+
+Example:
+
+01  AI CHATBOT ............... PYTHON / AI
+02  IMAGE CAPTIONING ........ CV / AI
+03  RECOMMENDATION AI ....... ML
+04  JAVA TYPING TEST ........ JAVA
+
+On hover:
+
+- row expands slightly
+- accent line moves
+- preview image appears
+- metadata appears
+- cursor changes to INSPECT
+
+Make it feel like browsing an engineering archive.
+
+==================================================
+19. SKILLS SECTION
+==================================================
+
+Do NOT use generic rounded skill badges.
+
+Use typographic lists.
+
+Example:
+
+LANGUAGES
+C++
+Java
+Python
+JavaScript
+SQL
+
+AI / COMPUTER VISION
+YOLOv8
+OpenCV
+PyTorch
+TensorFlow
+
+WEB / BACKEND
+React
+Node.js
+Firebase
+REST APIs
+
+TOOLS
+Git
+GitHub
+VS Code
+
+Make the skill names visually interesting.
+
+Hovering a skill should reveal a small technical explanation.
+
+Examples:
+
+YOLOv8
+→ OBJECT DETECTION
+
+OpenCV
+→ COMPUTER VISION
+
+Firebase
+→ REAL-TIME DATA
+
+React
+→ FRONTEND SYSTEMS
+
+==================================================
+20. TIMELINE
+==================================================
+
+Create a visual journey/timeline.
+
+2025
+B.Tech Information Technology
+R.M.D. Engineering College
+
+2026
+CodSoft AI Internship
+
+2026
+Smart India Hackathon
+INNOVEXA
+
+2026
+Research / AI Projects
+
+Make it editorial and technical.
+
+Use thin lines, markers, dates and annotations.
+
+==================================================
+21. CODING PROFILES
+==================================================
+
+Create a strong typographic section for:
+
+GitHub
+LinkedIn
+LeetCode
+SkillRack
+
+Use placeholders:
+
+[ADD GITHUB LINK]
+[ADD LINKEDIN LINK]
+[ADD LEETCODE LINK]
+[ADD SKILLRACK LINK]
+
+These should feel like large navigational links rather than tiny buttons.
+
+Hover:
+OPEN →
+
+==================================================
+22. CONTACT
+==================================================
+
+Final section headline:
+
+“Let’s build something.”
+
+Supporting text:
+
+“Always interested in interesting problems, ambitious projects and things that are slightly harder than they need to be.”
+
+Include:
+
+EMAIL
+[ADD EMAIL]
+
+GITHUB
+[ADD LINK]
+
+LINKEDIN
+[ADD LINK]
+
+RESUME
+[ADD LINK]
+
+Keep this section visually powerful but simple.
+
+==================================================
+23. IMAGE PLACEHOLDERS
+==================================================
+
+For now, use polished image placeholders.
+
+I WILL REPLACE THEM LATER WITH MY REAL SCREENSHOTS.
+
+Make every image source easy to replace.
+
+Prefer a central data/config structure such as:
+
+src/data/portfolio.ts
+
+Store:
+- project title
+- description
+- image
+- technologies
+- links
+- metadata
+
+Do not hard-code everything throughout components.
+
+==================================================
+24. INTERACTION PHILOSOPHY
+==================================================
+
+The website should feel alive.
+
+Include:
+
+- subtle parallax
+- smooth scroll
+- hover transitions
+- image tilt
+- floating 3D objects
+- technical cursor
+- text reveal
+- section transitions
+- live clock
+- project hover states
+- small annotation reveals
+
+But every animation should have restraint.
+
+The goal is:
+
+“Whoa, this site is alive.”
+
+NOT:
+
+“Why is everything moving?”
+
+==================================================
+25. RESPONSIVENESS
+==================================================
+
+Desktop:
+Full experience with floating objects, cursor, parallax and editorial layouts.
+
+Tablet:
+Simplify floating objects and spacing.
+
+Mobile:
+Prioritize readability and performance.
+
+Disable:
+custom cursor
+heavy 3D interactions
+large parallax effects
+
+on touch devices.
+
+Do NOT let floating objects cover text.
+
+==================================================
+26. ACCESSIBILITY
+==================================================
+
+Include:
+
+- semantic HTML
+- keyboard navigation
+- visible focus states
+- alt text
+- accessible links
+- reduced-motion support
+
+If prefers-reduced-motion is enabled:
+greatly reduce animation.
+
+==================================================
+27. PERFORMANCE
+==================================================
+
+Keep the site fast.
+
+Lazy-load project images.
+
+Do not load unnecessarily huge 3D assets.
+
+Prefer lightweight procedural 3D objects where possible.
+
+Use GPU-friendly transforms.
+
+Avoid continuous expensive rendering if nothing is moving.
+
+If using React Three Fiber, keep the scene extremely lightweight.
+
+==================================================
+28. TECH STACK
+==================================================
+
+Use:
+
+React
+TypeScript
+Vite
+Tailwind CSS
+
+Framer Motion for UI animation.
+
+Three.js / React Three Fiber only where it genuinely improves the 3D floating-object experience.
+
+No backend required.
+
+Keep the architecture clean.
+
+==================================================
+29. CODE QUALITY
+==================================================
+
+Create reusable components such as:
+
+Hero
+FloatingObject
+TechnicalLabel
+CustomCursor
+LiveStatus
+ProjectCaseStudy
+ProjectIndex
+Skills
+Timeline
+ProfileLinks
+Contact
+SectionHeader
+
+Create a central portfolio data file.
+
+Keep components modular.
+
+Do not put the entire website in one giant component.
+
+==================================================
+30. VISUAL QUALITY BAR
+==================================================
+
+Before considering the site complete, ask:
+
+Does this look like a generic developer portfolio?
+
+If YES → redesign.
+
+Does this look like an AI-generated website?
+
+If YES → redesign.
+
+Does this look like cyberpunk?
+
+If YES → remove neon/dark effects.
+
+Does this look too beige and feminine?
+
+If YES → increase espresso/brown technical contrast.
+
+Does this look too minimal?
+
+If YES → add more technical annotations and physical artifacts.
+
+Does this look cluttered?
+
+If YES → remove decorations and restore whitespace.
+
+The target feeling is:
+
+TECHNICAL
+EDITORIAL
+WARM
+SMART
+PLAYFUL
+ENGINEERED
+PREMIUM
+HUMAN
+
+==================================================
+31. FINAL DESIGN STATEMENT
+==================================================
+
+The final website should feel like:
+
+A beautifully designed engineering notebook belonging to a young AI/software engineer.
+
+There are physical objects floating around the workspace:
+a CCTV camera,
+circuit board,
+terminal,
+USB drive,
+water turbine,
+Java package,
+neural network,
+code tag.
+
+The objects make the page feel like a real workbench.
+
+The typography feels editorial.
+
+The tiny annotations make it feel engineered.
+
+The animations make it feel alive.
+
+The projects prove technical ability.
+
+The overall result should make a recruiter think:
+
+“Wait, this is a student portfolio?”
+
+It should feel memorable without being childish.
+
+DO NOT simplify the design into a standard portfolio template.
+
+Build the complete working website now.
