@@ -7,8 +7,8 @@ function HeroVisionObject() {
     onPointerMove={(event) => {
       if (event.pointerType === 'touch') return;
       const rect = event.currentTarget.getBoundingClientRect();
-      const x = ((event.clientX - rect.left) / rect.width - 0.5) * 8;
-      const y = ((event.clientY - rect.top) / rect.height - 0.5) * 8;
+      const x = ((event.clientX - rect.left) / rect.width - 0.5) * 4;
+      const y = ((event.clientY - rect.top) / rect.height - 0.5) * 4;
       event.currentTarget.style.setProperty('--camera-x', `${x.toFixed(1)}px`);
       event.currentTarget.style.setProperty('--camera-y', `${y.toFixed(1)}px`);
     }}
@@ -16,9 +16,10 @@ function HeroVisionObject() {
       event.currentTarget.style.removeProperty('--camera-x');
       event.currentTarget.style.removeProperty('--camera-y');
     }}>
-    <span className="vision-reticle" />
-    <span className="vision-camera-body"><i className="vision-camera-lens" /><i className="vision-camera-indicator" /></span>
-    <span className="mono vision-object-label">CV / IMAGE INPUT</span>
+    <div className="hero-camera-unit">
+      <span className="vision-camera-body"><i className="vision-camera-lens" /><i className="vision-camera-indicator" /></span>
+      <span className="mono vision-object-label">CV / IMAGE INPUT</span>
+    </div>
   </div>;
 }
 
@@ -69,7 +70,7 @@ function SkillsSection() {
       </div>)}
       <p className="skills-note">Curious about how things work — especially when hardware, data and people meet.</p>
     </div>
-    <div className="interest-strip"><span className="mono">OPEN QUESTIONS /</span>{portfolio.interests.map((interest) => <span key={interest}>{interest}</span>)}</div>
+    <div className="interest-strip"><span className="mono">OPEN QUESTIONS /</span>{portfolio.interests.map((interest) => <span key={interest}>{interest}</span>)}<span className="circuit-artifact" aria-hidden="true"><i className="circuit-trace circuit-trace-left" /><i className="circuit-trace circuit-trace-right" /><span className="circuit-core" /></span></div>
   </section>;
 }
 
@@ -91,7 +92,7 @@ function JourneySection() {
 }
 
 function ProfilesSection() {
-  return <section className="section section-rule" id="profiles">
+  return <section className="section section-rule dark-section" id="profiles">
     <SectionHeading number="04" title="Elsewhere" note="Profiles and places to follow the work. Links will be added when available." />
     <div className="profiles">{portfolio.profiles.map((profile) => <ProfilePlaceholder key={profile.name} {...profile} />)}</div>
   </section>;

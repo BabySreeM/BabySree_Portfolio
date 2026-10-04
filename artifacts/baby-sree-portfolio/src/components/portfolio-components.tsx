@@ -75,7 +75,7 @@ export function SectionHeading({ number, title, note }: { number: string; title:
 
 export function ProjectVisual({ project }: { project: Project }) {
   const [imageLoaded, setImageLoaded] = useState(false);
-  return <div className={`project-visual ${project.id === '02' ? 'vision-project-visual' : ''}`} data-cursor="SCAN" role="img" aria-label={project.imageAlt} tabIndex={0}
+  return <div className={`project-visual ${project.id === '02' ? 'vision-project-visual' : ''}`} data-cursor="INSPECT" role="img" aria-label={project.imageAlt} tabIndex={0}
     onPointerMove={(event) => {
       if (event.pointerType === 'touch') return;
       const rect = event.currentTarget.getBoundingClientRect();

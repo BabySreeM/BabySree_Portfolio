@@ -1,0 +1,184 @@
+This version is MUCH closer. Do NOT redesign the entire website.
+
+Keep the current Bricolage Grotesque typography, orange accent, project structure, real-image placeholders, and the SINGLE CCTV 3D object.
+
+The CCTV object is now working because it has a clear conceptual purpose:
+“machines see things.”
+
+DO NOT ADD MORE RANDOM 3D OBJECTS.
+
+Make these final refinements:
+
+1. COLOR / CONTRAST
+
+The page is still slightly too beige.
+
+Keep the warm neutral background, but introduce stronger contrast.
+
+Use the orange (#FF4B26) more confidently.
+
+Use dark espresso/near-black (#181512) for selected elements and occasional section backgrounds.
+
+The site should visually alternate between:
+- warm neutral
+- dark
+- warm neutral
+- dark
+
+rather than being one continuous beige canvas.
+
+Do NOT make it neon.
+
+Do NOT make it black everywhere.
+
+2. HERO
+
+KEEP THE CURRENT HERO.
+
+Keep:
+
+“I make machines
+see things.”
+
+with “see things.” in orange.
+
+Keep the CCTV 3D object beside the headline.
+
+However, make the composition slightly more experimental.
+
+Allow the CCTV to partially overlap the typography/grid area.
+
+Add one subtle orange graphic element behind/around the headline, such as:
+- a large thin circle
+- scanning crosshair
+- partial coordinate arc
+
+It should feel like a visual composition, not a HUD.
+
+Do NOT add another 3D object.
+
+3. HERO IMAGE / OBJECT
+
+The CCTV should be the ONLY hero 3D artifact.
+
+Make it slightly more realistic and premium.
+
+Keep:
+- subtle shadow
+- slight floating motion
+- tiny rotation
+- mouse response
+
+But reduce its movement.
+
+It should feel like a physical object sitting in the interface.
+
+4. TYPOGRAPHY
+
+Bricolage Grotesque is correct.
+
+Make the main headline slightly more oversized and editorial.
+
+The goal is to create a strong typographic silhouette similar to the reference image.
+
+Do not add another display font.
+
+5. PROJECT SECTION
+
+KEEP REAL IMAGE PLACEHOLDERS.
+
+I will replace them with actual screenshots.
+
+Do NOT create any 3D artwork for projects.
+
+Make the image containers slightly larger.
+
+The screenshot should visually dominate each project.
+
+Use the same editorial typography treatment:
+
+PROJECT 01
+
+INNOVEXA
+
+with the project number and orange accent.
+
+6. PROJECT IMAGE FRAME
+
+Instead of a boring rectangular placeholder, give each image a slightly more designed frame:
+
+- thin dark border
+- tiny orange corner marker
+- small technical filename
+- subtle hover tilt
+- slight image scale
+- INSPECT cursor
+
+But keep the actual screenshot completely visible.
+
+7. DARK SECTION
+
+Introduce one strong dark section after the projects.
+
+For example:
+
+SKILLS / TOOLBOX
+
+Background:
+#181512
+
+Text:
+warm white
+
+Accent:
+#FF4B26
+
+This will break up the beige and make the next light section feel fresh again.
+
+8. 3D OBJECT RULE
+
+FINAL RULE:
+
+Maximum 3D objects on the ENTIRE WEBSITE.
+
+They must have a conceptual reason.
+
+Hero:
+CCTV → computer vision
+
+One later section:
+small circuit/technical artifact → engineering
+
+Contact or skills:
+optional tiny artifact
+
+If an object is not necessary, REMOVE IT.
+
+Do not scatter objects around empty space.
+
+9. IMPORTANT
+
+Do not turn this back into:
+- engineering notebook
+- vintage editorial
+- museum catalog
+- beige portfolio
+- random 3D showcase
+
+The current direction is:
+
+Bricolage Grotesque
++
+bold orange
++
+warm neutral
++
+dark contrast
++
+real project screenshots
++
+ONE OR TWO meaningful 3D artifacts
++
+interactive technical details.
+
+This is the direction to finalize.
