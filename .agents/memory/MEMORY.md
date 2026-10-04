@@ -1,0 +1,1 @@
+- [Portfolio visual direction](portfolio-visual-direction.md) — The portfolio's intended identity is bold editorial tech, not an engineering notebook; project imagery stays honest and replaceable.

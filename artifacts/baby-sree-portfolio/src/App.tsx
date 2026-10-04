@@ -1,35 +1,47 @@
-import { useActiveSection, Header, SectionHeading, FloatingArtifact, ProjectCaseStudy, ProjectArchive, SkillTerm, CursorGuide, Annotation, ProfilePlaceholder } from '@/components/portfolio-components';
+import { useActiveSection, Header, SectionHeading, ProjectCaseStudy, ProjectArchive, SkillTerm, CursorGuide, Annotation, ProfilePlaceholder } from '@/components/portfolio-components';
 import { portfolio } from '@/data/portfolio';
+import { motion, useReducedMotion } from 'framer-motion';
+
+function HeroVisionObject() {
+  return <div className="hero-vision-object" aria-hidden="true" data-cursor="ROTATE"
+    onPointerMove={(event) => {
+      if (event.pointerType === 'touch') return;
+      const rect = event.currentTarget.getBoundingClientRect();
+      const x = ((event.clientX - rect.left) / rect.width - 0.5) * 8;
+      const y = ((event.clientY - rect.top) / rect.height - 0.5) * 8;
+      event.currentTarget.style.setProperty('--camera-x', `${x.toFixed(1)}px`);
+      event.currentTarget.style.setProperty('--camera-y', `${y.toFixed(1)}px`);
+    }}
+    onPointerLeave={(event) => {
+      event.currentTarget.style.removeProperty('--camera-x');
+      event.currentTarget.style.removeProperty('--camera-y');
+    }}>
+    <span className="vision-reticle" />
+    <span className="vision-camera-body"><i className="vision-camera-lens" /><i className="vision-camera-indicator" /></span>
+    <span className="mono vision-object-label">CV / IMAGE INPUT</span>
+  </div>;
+}
 
 function Hero() {
+  const reduceMotion = useReducedMotion();
   return <section className="hero" id="home" aria-labelledby="hero-title">
-    <div className="hero-copy">
-      <div className="eyebrow mono"><span>FIG. 01</span><span>BUILD 2026</span></div>
-      <h1 id="hero-title">{portfolio.hero.headline}</h1>
-      <p className="hero-subline">{portfolio.hero.secondLine}</p>
-      <p className="hero-support">{portfolio.hero.supporting}</p>
-      <div className="hero-meta mono"><span>SYSTEM 01</span><span>CHENNAI / INDIA</span><span>SECOND YEAR</span></div>
-    </div>
-    <div className="hero-art" aria-hidden="true">
-      <svg viewBox="0 0 180 150" fill="none">
-        <path d="M10 126H169M21 140V13M21 126L151 22" stroke="#806F63" strokeOpacity=".36" strokeDasharray="2 5"/>
-        <circle cx="96" cy="79" r="36" stroke="#B96F4A" strokeOpacity=".7"/>
-        <circle cx="96" cy="79" r="24" stroke="#5A4032" strokeOpacity=".4"/>
-        <path d="M96 38V120M55 79H137" stroke="#806F63" strokeOpacity=".5"/>
-        <path d="M140 20h17M148.5 11.5v17" stroke="#B96F4A"/>
-        <circle cx="96" cy="79" r="4" fill="#B96F4A"/>
-        <text x="26" y="20" fill="#806F63" fontSize="7" fontFamily="monospace">X: 13.0827</text>
-        <text x="111" y="135" fill="#806F63" fontSize="7" fontFamily="monospace">Y: 80.2707</text>
-      </svg>
-    </div>
+    <motion.div className="hero-copy"
+      initial={reduceMotion ? 'visible' : 'hidden'}
+      animate="visible"
+      variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.075 } } }}>
+      <motion.div className="eyebrow mono" variants={{ hidden: { opacity: 0, y: 14 }, visible: { opacity: 1, y: 0 } }} transition={{ duration: 0.55, ease: 'easeOut' }}><span>FIG. 01</span><span>BUILD 2026</span></motion.div>
+      <motion.h1 id="hero-title" variants={{ hidden: { opacity: 0, y: 18 }, visible: { opacity: 1, y: 0 } }} transition={{ duration: 0.65, ease: 'easeOut' }}>{portfolio.hero.headline.split(/(see things\.)/).map((part, index) => part === 'see things.' ? <em key={index}>{part}</em> : part)}</motion.h1>
+      <motion.p className="hero-subline" variants={{ hidden: { opacity: 0, y: 14 }, visible: { opacity: 1, y: 0 } }} transition={{ duration: 0.55, ease: 'easeOut' }}>{portfolio.hero.secondLine}</motion.p>
+      <motion.p className="hero-support" variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }} transition={{ duration: 0.5, ease: 'easeOut' }}>{portfolio.hero.supporting}</motion.p>
+      <motion.div className="hero-meta mono" variants={{ hidden: { opacity: 0, y: 8 }, visible: { opacity: 1, y: 0 } }} transition={{ duration: 0.45, ease: 'easeOut' }}><span>SYSTEM 01</span><span>CHENNAI / INDIA</span><span>SECOND YEAR</span></motion.div>
+    </motion.div>
+    <HeroVisionObject />
     <aside className="hero-aside">
       <p className="mono">B.TECH INFORMATION TECHNOLOGY</p>
       <p className="mono coord">{portfolio.college}</p>
       <p className="mono coord">{portfolio.years} / SECOND YEAR</p>
       <p className="mono coord">COORD: 13.0827° N / 80.2707° E</p>
     </aside>
-    <FloatingArtifact index={0} style={{ right: '4%', top: '61%' }} />
-    <FloatingArtifact index={2} style={{ right: '34%', top: '12%', animationDelay: '-3s' }} />
   </section>;
 }
 
@@ -37,22 +49,18 @@ function WorkSection() {
   return <section className="section section-rule projects" id="work">
     <SectionHeading number="01" title="Selected work" note="Systems built around practical problems, from computer vision to resource intelligence." />
     <ProjectCaseStudy project={portfolio.projects[0]} />
-    <FloatingArtifact index={4} style={{ top: '29%', right: '4%', animationDelay: '-5s' }} />
     <ProjectCaseStudy project={portfolio.projects[1]} reverse />
-    <FloatingArtifact index={1} style={{ top: '53%', left: '2%', animationDelay: '-1.5s' }} />
     <ProjectCaseStudy project={portfolio.projects[2]} />
-    <FloatingArtifact index={6} style={{ right: '5%', bottom: '8%', animationDelay: '-4s' }} />
     <div className="archive-head">
       <div><Annotation>BUILD 04 / SMALLER SYSTEMS</Annotation><h3 className="archive-title">From the workbench</h3></div>
       <p className="archive-intro">A few compact builds and studies. Select a row to inspect its note.</p>
     </div>
     <ProjectArchive />
-    <FloatingArtifact index={5} style={{ right: '4%', bottom: '1%', animationDelay: '-2s' }} />
   </section>;
 }
 
 function SkillsSection() {
-  return <section className="section section-rule" id="skills">
+  return <section className="section dark-section" id="skills">
     <SectionHeading number="02" title="Tools & materials" note="A working set across software, AI and the parts that connect them." />
     <div className="skills-layout">
       {portfolio.skillGroups.map((group, index) => <div className="skill-group" key={group.title}>
@@ -62,8 +70,6 @@ function SkillsSection() {
       <p className="skills-note">Curious about how things work — especially when hardware, data and people meet.</p>
     </div>
     <div className="interest-strip"><span className="mono">OPEN QUESTIONS /</span>{portfolio.interests.map((interest) => <span key={interest}>{interest}</span>)}</div>
-    <FloatingArtifact index={7} style={{ right: '5%', top: '29%', animationDelay: '-6s' }} />
-    <FloatingArtifact index={3} style={{ left: '4%', bottom: '10%', animationDelay: '-2s' }} />
   </section>;
 }
 
@@ -94,10 +100,9 @@ function ProfilesSection() {
 function ContactSection() {
   return <section className="contact" id="contact">
     <Annotation>05 / OPEN INPUT</Annotation>
-    <h2>Let’s build<br />something.</h2>
+    <h2>Let’s build<br /><span className="orange">something.</span></h2>
     <p className="contact-lede">Always interested in interesting problems, ambitious projects and things that are slightly harder than they need to be.</p>
     <div className="contact-grid">{portfolio.contact.map((item) => <div className="contact-cell" key={item.label}><span className="mono">{item.label}</span><strong>{item.value}</strong></div>)}</div>
-    <FloatingArtifact index={2} style={{ right: '7%', top: '18%', animationDelay: '-2s' }} />
   </section>;
 }
 
@@ -115,7 +120,7 @@ function App() {
       <ProfilesSection />
       <ContactSection />
     </main>
-    <footer className="footer"><span>Baby Sree M · {portfolio.role}</span><span className="mono">NOTEBOOK / VERSION 01</span><a href="#home" className="mono back-top" data-cursor="OPEN">BACK TO TOP ↑</a></footer>
+    <footer className="footer"><span>Baby Sree M · {portfolio.role}</span><span className="mono">AI / SOFTWARE / BUILD 01</span><a href="#home" className="mono back-top" data-cursor="OPEN">BACK TO TOP ↑</a></footer>
     <div className="page-count" aria-live="polite">{activeNumber} / 06</div>
     <CursorGuide />
   </div>;

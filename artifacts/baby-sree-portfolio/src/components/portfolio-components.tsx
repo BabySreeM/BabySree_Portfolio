@@ -1,4 +1,4 @@
-import { useEffect, useState, type CSSProperties, type ReactNode } from 'react';
+import { useEffect, useState, type ReactNode } from 'react';
 import { portfolio, type Project } from '@/data/portfolio';
 
 const sections = [
@@ -68,40 +68,14 @@ export function useActiveSection() {
 
 export function SectionHeading({ number, title, note }: { number: string; title: string; note: string }) {
   return <div className="section-heading">
-    <div><div className="mono section-no">{number} / FIELD NOTES</div><h2>{title}</h2></div>
+    <div><div className="mono section-no">SECTION / {number}</div><h2>{title}</h2></div>
     <p>{note}</p>
   </div>;
 }
 
-const objectNames = ['MINI CCTV CAMERA', 'CIRCUIT BOARD', 'TERMINAL', 'USB DRIVE', 'WATER DROPLET + TURBINE', 'JAVA PACKAGE', 'NEURAL NETWORK NODE', 'CODE BRACKET / HARDWARE TAG'];
-const objectLabels = ['VISION SENSOR', 'CONTROL BOARD', 'TERMINAL', 'DATA DEVICE', 'RESOURCE LOOP', 'JAVA PACKAGE', 'MODEL GRAPH', 'INTERFACE'];
-const objectHover = ['COMPUTER VISION', 'EMBEDDED SYSTEM', 'SOFTWARE', 'DATA / STORAGE', 'WATER + ENERGY', 'JAVA', 'MACHINE LEARNING', 'BUILD'];
-const objectClass = ['obj-camera', 'obj-pcb', 'obj-terminal', 'obj-usb', 'obj-drop', 'obj-jar', 'obj-nodes', 'obj-tag'];
-
-export function FloatingArtifact({ index, style }: { index: number; style?: CSSProperties }) {
-  return <div className={`object object-${index + 1}`} style={style} tabIndex={0} role="img" aria-label={`${objectNames[index]}, ${objectLabels[index]}`} data-cursor="ROTATE"
-    onPointerMove={(event) => {
-      if (event.pointerType === 'touch') return;
-      const rect = event.currentTarget.getBoundingClientRect();
-      const depth = 5 + ((index * 7) % 15);
-      const x = ((event.clientX - rect.left) / rect.width - 0.5) * depth * 2;
-      const y = ((event.clientY - rect.top) / rect.height - 0.5) * depth * 2;
-      event.currentTarget.style.setProperty('--parallax-x', `${x.toFixed(1)}px`);
-      event.currentTarget.style.setProperty('--parallax-y', `${y.toFixed(1)}px`);
-    }}
-    onPointerLeave={(event) => {
-      event.currentTarget.style.removeProperty('--parallax-x');
-      event.currentTarget.style.removeProperty('--parallax-y');
-    }}>
-    {index === 4
-      ? <span className="artifact obj-water-wheel"><i className="mini-drop" /><i className="mini-wheel" /></span>
-      : <span className={`artifact ${objectClass[index]}`}>{index === 7 ? '</>' : index === 2 ? <span className="terminal-lines">npm run build<br />system ready</span> : null}</span>}
-    <span className="object-label mono">OBJECT {String(index + 1).padStart(2, '0')} · {objectLabels[index]}<br /><b>{objectHover[index]}</b></span>
-  </div>;
-}
-
 export function ProjectVisual({ project }: { project: Project }) {
-  return <div className={`project-visual ${project.visual === 'innovexa' ? 'innovexa-scene' : project.visual === 'vision' ? 'vision-scene' : 'research-scene'} ${project.image ? 'has-screenshot' : ''}`} data-cursor="SCAN" role="img" aria-label={project.imageAlt} tabIndex={0}
+  const [imageLoaded, setImageLoaded] = useState(false);
+  return <div className={`project-visual ${project.id === '02' ? 'vision-project-visual' : ''}`} data-cursor="SCAN" role="img" aria-label={project.imageAlt} tabIndex={0}
     onPointerMove={(event) => {
       if (event.pointerType === 'touch') return;
       const rect = event.currentTarget.getBoundingClientRect();
@@ -110,18 +84,19 @@ export function ProjectVisual({ project }: { project: Project }) {
       event.currentTarget.style.transform = `perspective(900px) rotateX(${-y * 2.8}deg) rotateY(${x * 3.2}deg) scale(1.012)`;
     }}
     onPointerLeave={(event) => { event.currentTarget.style.transform = ''; }}>
-    {project.image && <img className="project-screenshot" src={project.image} alt="" aria-hidden="true" loading="lazy" />}
-    <span className="mono visual-label">{project.visual === 'vision' ? 'MODEL ACTIVE / SCAN' : project.visual === 'innovexa' ? 'SYSTEM 01 / RESOURCE LOOP' : 'INPUT / SPEECH SIGNAL'}</span>
-    {project.visual === 'innovexa' ? <div className="visual-frame">
-      <div className="pipe" /><div className="waterline" /><div className="turbine" />
-      <span className="mono visual-caption">FLOW → ENERGY</span>
-    </div> : project.visual === 'vision' ? <div className="visual-frame">
-      <div className="camera-grid" /><div className="person-figure" /><div className="bbox person" /><span className="bbox label">PERSON 0.94</span><div className="scan-line" /><span className="mono vision-note">OBJECT DETECTED / ALERT 0.91</span>
-    </div> : <div className="visual-frame research-wave" aria-hidden="true">
-      <div className="wave-label mono">SIGNAL / 01</div>
-      <div className="waveform">{Array.from({ length: 48 }, (_, i) => <i key={i} style={{ height: `${9 + ((i * 13 + 17) % 34)}px` }} />)}</div>
-      <div className="research-caption mono">VOICE INPUT → FEATURE ANALYSIS</div>
-    </div>}
+    <div className="visual-frame" aria-hidden="true">
+      <div className="image-placeholder">
+        <span className="mono placeholder-path">{project.image}</span>
+        <span className="placeholder-corners" />
+        <div className="placeholder-center">
+          <strong>Screenshot<br />needed</strong>
+          <span className="mono">IMAGE SLOT / NOT PROVIDED</span>
+        </div>
+        <span className="mono placeholder-path">DROP PROJECT CAPTURE HERE</span>
+      </div>
+    </div>
+    {project.image && <img className={`project-screenshot ${imageLoaded ? 'is-loaded' : ''}`} src={project.image} alt="" aria-hidden="true" loading="lazy" onLoad={() => setImageLoaded(true)} onError={() => setImageLoaded(false)} />}
+    {project.id === '02' && <div className="vision-overlay" aria-hidden="true"><span>PERSON 0.94</span><span>OBJECT 0.87</span><span>ALERT 0.91</span></div>}
     <span className="mono visual-id">FIG. {project.id}</span>
   </div>;
 }
@@ -136,8 +111,8 @@ export function ProjectCaseStudy({ project, reverse = false }: { project: Projec
       <p className="project-description">{project.description}</p>
       <div className="tag-list">{project.focus.map((tag) => <span key={tag}>{tag}</span>)}</div>
       <div className="project-foot">
-        <div><div className="mono">TECHNOLOGY</div><div className="mono" style={{ color: 'var(--brown)', marginTop: 5 }}>{project.technology}</div></div>
-        <div><div className="mono">ROLE / CONTEXT</div><div className="mono" style={{ color: 'var(--brown)', marginTop: 5 }}>{project.role}</div></div>
+        <div><div className="mono">TECHNOLOGY</div><div className="mono" style={{ color: 'var(--ink)', marginTop: 5 }}>{project.technology}</div></div>
+        <div><div className="mono">ROLE / CONTEXT</div><div className="mono" style={{ color: 'var(--ink)', marginTop: 5 }}>{project.role}</div></div>
       </div>
     </div>
   </article>;
@@ -145,9 +120,11 @@ export function ProjectCaseStudy({ project, reverse = false }: { project: Projec
 
 export function ProjectArchive() {
   const [selected, setSelected] = useState<number | null>(null);
+  const [preview, setPreview] = useState<number | null>(null);
   return <div className="archive-list" aria-label="Project index">
-    {portfolio.smallerProjects.map((project, index) => <button className="archive-row" key={project.title} type="button" onClick={() => setSelected(selected === index ? null : index)} aria-expanded={selected === index} data-cursor="INSPECT" data-testid={`button-project-${index + 1}`}>
+    {portfolio.smallerProjects.map((project, index) => <button className="archive-row" key={project.title} type="button" onClick={() => setSelected(selected === index ? null : index)} onMouseEnter={() => setPreview(index)} onMouseLeave={() => setPreview(null)} onFocus={() => setPreview(index)} onBlur={() => setPreview(null)} aria-expanded={selected === index} data-cursor="INSPECT" data-testid={`button-project-${index + 1}`}>
       <span className="archive-num">{String(index + 1).padStart(2, '0')}</span><span className="archive-name">{project.title}</span><span className="archive-meta">{project.tech}</span><span className="archive-arrow" aria-hidden="true">↗</span>
+      {preview === index && selected !== index && <span className="archive-hover-preview" aria-hidden="true">{project.note}</span>}
       {selected === index && <span className="archive-expanded">{project.note}<span className="mono"> &nbsp; / &nbsp; {project.tech}</span></span>}
     </button>)}
   </div>;
@@ -179,6 +156,6 @@ export function Annotation({ children, className = '' }: { children: ReactNode; 
 
 export function ProfilePlaceholder({ name, placeholder }: { name: string; placeholder: string }) {
   return <div className="profile-item" aria-label={`${name} profile placeholder`}>
-    <span className="profile-name">{name}</span><span className="profile-detail"><span className="mono">{placeholder}</span><span className="profile-open mono">OPEN →</span></span>
+    <span className="profile-name">{name}</span><span className="profile-detail"><span className="mono">{placeholder}</span></span>
   </div>;
 }

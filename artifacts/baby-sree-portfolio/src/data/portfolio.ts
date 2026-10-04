@@ -1,7 +1,7 @@
 export const imagePlaceholders = {
-  innovexa: null as string | null,
-  safeVision: null as string | null,
-  research: null as string | null,
+  innovexa: '/images/innovexa.png',
+  safeVision: '/images/safevision.png',
+  research: '/images/research.png',
 };
 
 export const portfolio = {
@@ -26,7 +26,7 @@ export const portfolio = {
       technology: 'AI · IoT · REAL-TIME SYSTEMS',
       role: 'PROJECT / SMART INDIA HACKATHON 2026',
       image: imagePlaceholders.innovexa,
-      imageAlt: 'Replaceable visual placeholder: water infrastructure and a small turbine mechanism.',
+      imageAlt: 'Replaceable project screenshot area for INNOVEXA. Screenshot not provided yet.',
       visual: 'innovexa',
     },
     {
@@ -38,19 +38,19 @@ export const portfolio = {
       technology: 'YOLOv8 · OPENCV · PYTHON · ROBOFLOW',
       role: 'PROJECT / REAL-TIME SAFETY MONITORING',
       image: imagePlaceholders.safeVision,
-      imageAlt: 'Replaceable visual placeholder: camera-view study with subtle detection annotations.',
+      imageAlt: 'Replaceable project screenshot area for Safe Vision. Screenshot not provided yet.',
       visual: 'vision',
     },
     {
       id: '03',
-      title: 'Whispers of the Mind',
+      title: 'WHISPERS OF THE MIND',
       context: 'RESEARCH / 01',
-      description: '“Whispers of the Mind — AI Speech Analytics for Early Alzheimer’s Risk”',
+      description: 'AI Speech Analytics for Early Alzheimer’s Risk',
       focus: ['AI', 'Speech Analytics', 'Healthcare Research'],
       technology: 'AI · SPEECH ANALYTICS',
       role: 'RESEARCH ARTIFACT',
       image: imagePlaceholders.research,
-      imageAlt: 'Replaceable visual placeholder: annotated speech waveform and research notes.',
+      imageAlt: 'Replaceable project screenshot area for Whispers of the Mind. Screenshot not provided yet.',
       visual: 'research',
     },
   ],
